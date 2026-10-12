@@ -143,15 +143,6 @@ public:
         return !left->Equals(right);
     }
 
-internal:
-    ~Proxy() {
-        this->!Proxy();
-    }
-
-    !Proxy() {
-
-    }
-
 protected:
     virtual Object^ Invoke(Reflection::MethodInfo^ targetMethod, array<Object^>^ args) override {
         // Get the REFrameworkNET::Attributes::Method attribute from the method
